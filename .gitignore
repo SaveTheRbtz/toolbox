@@ -1,0 +1,13 @@
+.DS_Store
+.dropbox
+.coverprofile
+*.iml
+*.secret
+*.tokens
+*.afdesign
+*.appkeys
+*.pem
+*.key
+*.jks
+/.idea
+_site/

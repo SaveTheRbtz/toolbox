@@ -1,0 +1,6 @@
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+url: 'http://localhost:4000'

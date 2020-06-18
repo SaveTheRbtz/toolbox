@@ -1,0 +1,27 @@
+
+# Permalinks
+permalink:                pretty
+relative_permalinks:      false
+
+# About
+title:                    watermint toolbox
+tagline:                  "CLI tools for Dropbox and Dropbox Business"
+description:              'Set of tool commands for Dropbox and Dropbox Business.'
+
+# Url
+url:                      'https://watermint.github.io/toolbox'
+baseurl:                  ''
+paginate:                 5
+
+# Markdown
+markdown:                 kramdown
+
+kramdown:
+  input:                  GFM
+  hard_wrap:              false
+  syntax_highlighter:     rouge
+
+# Contact
+author:
+  name:                   Takayuki Okazaki
+  url:                    https://github.com/watermint
