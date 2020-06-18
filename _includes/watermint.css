@@ -67,7 +67,7 @@ body {
 
 {% comment %} No `:visited` state is required by default (browsers will use `a`) {% endcomment %}
 a {
-  color: #268bd2;
+  color: #264873;
   text-decoration: none;
 }
 a strong {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: #5285C6;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -687,10 +687,10 @@ a.sidebar-nav-item:focus {
 .sidebar-toggle:active:before,
 #sidebar-checkbox:focus ~ .sidebar-toggle:before,
 #sidebar-checkbox:checked ~ .sidebar-toggle:before {
-  background-image: -webkit-linear-gradient(to bottom, #fff 0%, #fff 20%, #d28445 20%, #d28445 40%, #fff 40%, #fff 60%, #d28445 60%, #d28445 80%, #fff 80%, #fff 100%);
-  background-image:    -moz-linear-gradient(to bottom, #fff 0%, #fff 20%, #d28445 20%, #d28445 40%, #fff 40%, #fff 60%, #d28445 60%, #d28445 80%, #fff 80%, #fff 100%);
-  background-image:     -ms-linear-gradient(to bottom, #fff 0%, #fff 20%, #d28445 20%, #d28445 40%, #fff 40%, #fff 60%, #d28445 60%, #d28445 80%, #fff 80%, #fff 100%);
-  background-image:         linear-gradient(to bottom, #fff 0%, #fff 20%, #d28445 20%, #d28445 40%, #fff 40%, #fff 60%, #d28445 60%, #d28445 80%, #fff 80%, #fff 100%);
+  background-image: -webkit-linear-gradient(to bottom, #fff 0%, #fff 20%, #264873 20%, #264873 40%, #fff 40%, #fff 60%, #264873 60%, #264873 80%, #fff 80%, #fff 100%);
+  background-image:    -moz-linear-gradient(to bottom, #fff 0%, #fff 20%, #264873 20%, #264873 40%, #fff 40%, #fff 60%, #264873 60%, #264873 80%, #fff 80%, #fff 100%);
+  background-image:     -ms-linear-gradient(to bottom, #fff 0%, #fff 20%, #264873 20%, #264873 40%, #fff 40%, #fff 60%, #264873 60%, #264873 80%, #fff 80%, #fff 100%);
+  background-image:         linear-gradient(to bottom, #fff 0%, #fff 20%, #264873 20%, #264873 40%, #fff 40%, #fff 60%, #264873 60%, #264873 80%, #fff 80%, #fff 100%);
 }
 
 @media (min-width: 30.1em) {
@@ -901,12 +901,12 @@ a.pagination-item:hover {
 .theme-base-09 .sidebar,
 .theme-base-09 .sidebar-toggle:active,
 .theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #d28445;
+  background-color: #264873;
 }
 .theme-base-09 .container a,
 .theme-base-09 .sidebar-toggle,
 .theme-base-09 .related-posts li a:hover {
-  color: #d28445;
+  color: #264873;
 }
 
 {% comment %} Yellow {% endcomment %}
@@ -1009,10 +1009,10 @@ a.pagination-item:hover {
 {% comment %}
  *  ____ ___  _ _      _____  ____ ___  _
  * / ___\\  \/// \  /|/__ __\/  _ \\  \//
- * |    \ \  / | |\ ||  / \  | / \| \  / 
- * \___ | / /  | | \||  | |  | |-|| /  \ 
+ * |    \ \  / | |\ ||  / \  | / \| \  /
+ * \___ | / /  | | \||  | |  | |-|| /  \
  * \____//_/   \_/  \|  \_/  \_/ \|/__/\\
- *                                       
+ *
  {% endcomment %}
 
  .highlight table td { padding: 5px; }

@@ -4,6 +4,10 @@ title: Home
 ---
 
 <div class="posts">
+  <div class="mx-auto">
+    <img src="images/logo.png" alt="watermint toolbox" style="width: 200px;" />
+  </div>
+
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -12,21 +16,6 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{% assign d = post.date | date: "%-d"  %}
-{% case d %}
-  {% when '1' or '21' or '31' %}{{ d }}st
-  {% when '2' or '22' %}{{ d }}nd
-  {% when '3' or '23' %}{{ d }}rd
-  {% else %}{{ d }}th
-  {% endcase %}
-{{ post.date | date: "%B" }} 
-{{ post.date | date: "%Y" }}</span>
-  <span class="post-tags"> 
-  {% assign post_tags = post.tags | sort %}
-  {% for tag in post_tags %}
-  #<a href="/tags/{{ tag }}">{{ tag }}</a>
-  {% endfor %}
-  </span>
 
     {{ post.content }}
   </div>
@@ -49,4 +38,3 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-

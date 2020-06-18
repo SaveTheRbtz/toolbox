@@ -11,3 +11,4 @@
 *.jks
 /.idea
 _site/
+.jekyll-cache/

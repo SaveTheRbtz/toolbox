@@ -9,8 +9,6 @@ tagline:                  "CLI tools for Dropbox and Dropbox Business"
 description:              'Set of tool commands for Dropbox and Dropbox Business.'
 
 # Url
-url:                      'https://watermint.github.io/toolbox'
-baseurl:                  ''
 paginate:                 5
 
 # Markdown

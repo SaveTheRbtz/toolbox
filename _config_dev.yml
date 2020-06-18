@@ -4,3 +4,4 @@ plugins:
   - jekyll-sitemap
 
 url: 'http://localhost:4000'
+baseurl: ''
