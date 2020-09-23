@@ -21,6 +21,8 @@ type Upload struct {
 	Lambda      int
 	MinNodes    int
 	MaxNodes    int
+	MinFileSize int64
+	MaxFileSize int64
 	ChunkSizeKb mo_int.RangeInt
 }
 
@@ -28,12 +30,15 @@ func (z *Upload) Preset() {
 	z.Lambda = 100
 	z.MinNodes = 10
 	z.MaxNodes = 1000
+	z.MinFileSize = 100 * 1024 * 1024
+	z.MaxFileSize = 1 * 1024 * 1024 * 1024
 	z.ChunkSizeKb.SetRange(1, 150*1024, 64*1024)
 }
 
 func (z *Upload) Exec(c app_control.Control) error {
 	model := em_file.NewGenerator().Generate(
 		em_file.NumNodes(z.Lambda, z.MinNodes, z.MaxNodes),
+		em_file.FileSize(z.MinFileSize, z.MaxFileSize),
 	)
 	copier := filesystem.NewModelToDropbox(model, z.Peer.Context(), sv_file_content.ChunkSizeKb(z.ChunkSizeKb.Value()))
 	syncer := es_sync.New(
